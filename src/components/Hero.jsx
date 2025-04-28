@@ -1,27 +1,15 @@
-// import React from "react";
-// import "./Hero.css";
-
-// // import "./Hero.css";
-
-// const Hero = () => {
-//   return (
-//     <section className="hero" id="home">
-//       <h1>Hello, I'm <span>Pradip Das</span></h1>
-//       <p>A Frontend Developer passionate about building beautiful websites.</p>
-//       <a href="#projects" className="cta-button">See My Work</a>
-//     </section>
-//   );
-// };
-
-// export default Hero;
 import React from "react";
 import Typewriter from "typewriter-effect";
+import "./Hero.css"; 
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center px-4">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Pradip Das</h1>
-      <div className="text-xl md:text-3xl text-gray-700">
+    <section id="home" className="hero-section">
+      <h1 className="hero-title">
+        Hi, I'm <span className="highlight">Pradip Das</span>
+      </h1>
+
+      <div className="hero-subtitle">
         <Typewriter
           options={{
             strings: [
@@ -32,14 +20,21 @@ function Hero() {
             ],
             autoStart: true,
             loop: true,
-            delay: 75,
-            deleteSpeed: 50,
+            delay: 70,
+            deleteSpeed: 40,
           }}
         />
       </div>
-    </div>
+
+      <p className="hero-description">
+        I love building modern, fast, and responsive websites with clean code and creative designs.
+      </p>
+
+      <a href="#projects" className="hero-button">
+        See My Work
+      </a>
+    </section>
   );
 }
 
 export default Hero;
-
