@@ -1,0 +1,136 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #5474a4;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* .navbar-logo {
+    font-size: 1.5rem;
+  } */
+  
+  /* .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+   */
+  /* .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  } */
+
+  /* .navbar-links a.active {
+  color: #64ffda;
+  border-bottom: 2px solid #64ffda;
+  padding-bottom: 2px;
+} */
+
+/*   
+  .navbar-links a:hover {
+    color: #64ffda;
+  } */
+  
+  /* 👇 Responsive for small screens (mobile) */
+  /* @media (max-width: 768px) {
+    .navbar-links {
+      display: none; 
+    }
+  
+    .navbar-logo {
+      font-size: 1.2rem;
+    }
+  } */
+  /* Navbar.css */
+
+/* .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  } */
+  
+  .navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #0f0101;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .navbar-links li a.active {
+    color: #007bff;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Open hamburger animation */
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Mobile menu */
+  @media (max-width: 768px) {
+    .navbar-links {
+      position: absolute;
+      top: 70px;
+      left: -100%;
+      background: #ffffff;
+      width: 100%;
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+      transition: left 0.3s ease;
+      padding: 2rem 0;
+    }
+  
+    .navbar-links.open {
+      left: 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
