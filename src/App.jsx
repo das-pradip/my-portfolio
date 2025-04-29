@@ -16,6 +16,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import "./App.css";
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
       <section id="hero">
         <Hero />
       </section>
-      <section id="about" style={{ height: "100vh" }}>
+      <section id="about" style={{ height: "auto" }}>
         <h1>About Section</h1>
+        <About />
       </section>
       <section id="skills" style={{ height: "100vh" }}>
         <h1>Skills Section</h1>

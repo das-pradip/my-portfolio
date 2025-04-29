@@ -1,0 +1,153 @@
+.about-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    /* dark blue gradient */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    /* min-height: 100vh; */
+    /* min-height: auto; */
+    min-height: unset;
+    height: auto;
+    /* height: fit-content; */
+    /* max-height: fit-content; */
+}
+
+/* .bubbles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  } */
+.bubbles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    /* max-height: 100%; */
+    /* height: auto; */
+    max-height: fit-content;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+.bubble {
+    /* position: absolute; */
+    position: relative;
+    bottom: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(203, 184, 39, 0.1);
+    border-radius: 50%;
+    animation: floatBubbles 15s linear infinite;
+}
+
+.bubble:nth-child(1) {
+    left: 10%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 12s;
+}
+
+.bubble:nth-child(2) {
+    left: 20%;
+    animation-duration: 18s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(3) {
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+    left: 40%;
+    animation-duration: 14s;
+    animation-delay: 5s;
+}
+
+.bubble:nth-child(5) {
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 20s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+    left: 60%;
+    animation-duration: 17s;
+}
+
+.bubble:nth-child(7) {
+    left: 70%;
+    animation-duration: 13s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(8) {
+    left: 80%;
+    animation-duration: 11s;
+}
+
+.bubble:nth-child(9) {
+    left: 90%;
+    animation-duration: 16s;
+    animation-delay: 6s;
+}
+
+.bubble:nth-child(10) {
+    left: 95%;
+    animation-duration: 19s;
+}
+
+@keyframes floatBubbles {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sound-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    background-color: rgba(74, 195, 185, 0.2);
+    border: none;
+    color: rgb(48, 147, 15);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: background-color 0.3s;
+}
+
+.sound-toggle:hover {
+    background-color: rgba(91, 194, 27, 0.35);
+}
