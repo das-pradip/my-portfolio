@@ -3,9 +3,11 @@ import Typewriter from "typewriter-effect";
 import Lottie from "lottie-react";
 import ninjaAnimation from "../assets/coder.json";
 
+
 import "./Hero.css"; 
 
 function Hero() {
+  
   return (
     <section id="home" className="hero-section">
       <h1 className="hero-title">
@@ -28,6 +30,8 @@ function Hero() {
           }}
         />
       </div>
+   
+
       {/* Lottie Animation */}
       <div className="animation-container">
         <Lottie animationData={ninjaAnimation} loop={true} />
@@ -43,5 +47,4 @@ function Hero() {
     </section>
   );
 }
-
 export default Hero;
