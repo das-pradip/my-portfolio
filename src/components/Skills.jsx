@@ -1,44 +1,5 @@
 
 
-// import React from "react";
-// import "./Skills.css";
-
-// const skills = [
-//   { name: "HTML5", level: 90 },
-//   { name: "CSS3", level: 90 },
-//   { name: "JavaScript", level: 70 },
-//   { name: "ReactJS", level: 60 },
-//   { name: "NodeJS", level: 70 },
-//   { name: "ExpressJS", level: 70 },
-//   { name: "MongoDB", level: 70 },
-//   { name: "MySQL", level: 70 },
-//   { name: "Java", level: 60 },
-//   { name: "C", level: 65 },
-//   { name: "Communication Skill", level: 90 },
-//   { name: "Problem Solving", level: 60 },
-// ];
-
-// function Skills() {
-//   return (
-//     <section id="skills" className="skills-section">
-//       <h2 className="section-title">My Skills</h2>
-//       <div className="skills-grid">
-//         {skills.map((skill, index) => (
-//           <div className="skill-card" key={index} style={{ animationDelay: `${index * 0.2}s` }}>
-//             <span className="skill-name">{skill.name}</span>
-//             <div className="skill-bar">
-//               <div className="skill-level" style={{ width: `${skill.level}%` }}></div>
-//             </div>
-//             <span className="skill-percent">{skill.level}%</span>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Skills;
-
 import React from "react";
 import { motion } from "framer-motion";
 import "./Skills.css";
