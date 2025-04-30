@@ -1,0 +1,29 @@
+.footer {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #0a192f;
+    color: #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .footer a {
+    color: #64ffda;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-heart {
+    color: red;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  

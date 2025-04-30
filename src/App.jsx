@@ -17,9 +17,12 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import "./App.css";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./App.css";
+
 
 function App() {
   return (
@@ -40,8 +43,13 @@ function App() {
         <h1>Projects Section</h1>
         <Projects />
       </section>
-      <section id="contact" style={{ height: "100vh" }}>
+      <section id="contact" style={{ height: "auto" }}>
         <h1>Contact Section</h1>
+        <Contact />
+      </section>
+      <section id="contact" style={{ height: "auto" }}>
+        {/* <h1>Contact Section</h1> */}
+        <Footer />
       </section>
     </>
   );
