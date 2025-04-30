@@ -1,18 +1,4 @@
-// import React from "react";
-// import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-// import "./App.css"; // still include empty or basic styles
 
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Hero />
-//     </>
-//   );
-// }
-
-// export default App;
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
