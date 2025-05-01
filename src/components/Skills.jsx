@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import "./Skills.css";
+import "./skills.css";
 
 const skillsData = [
   { name: "HTML5", level: 90 },
