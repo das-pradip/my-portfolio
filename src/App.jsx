@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
+import Chatbot from "./components/Chatbot";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       </section>
       <section id="contact" style={{ height: "auto" }}>
         {/* <h1>Contact Section</h1> */}
+        <Chatbot />
         <Footer />
       </section>
     </>
