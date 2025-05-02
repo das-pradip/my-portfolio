@@ -1,4 +1,4 @@
-
+/* 
    .hero-section {
     position: relative;
     min-height: 100vh;
@@ -69,4 +69,137 @@
   pointer-events: none;
   animation: emojiBomb linear forwards;
   z-index: 10;
+} */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #0a192f;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.highlight {
+  color: #63b3ed;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 1.5rem;
+  z-index: 2;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: #cbd5e0;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.hero-button {
+  background-color: #3182ce;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.hero-button:hover {
+  background-color: #2b6cb0;
+  box-shadow: 0 8px 15px rgba(49, 130, 206, 0.3);
+}
+
+.animation-container {
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+/* Emoji bomb animation */
+@keyframes emojiBomb {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.emoji-bomb {
+  position: absolute;
+  font-size: 34px;
+  pointer-events: none;
+  animation: emojiBomb 3s linear forwards;
+  z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .animation-container {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .animation-container {
+    width: 200px;
+  }
+
+  .emoji-bomb {
+    font-size: 28px;
+  }
 }
