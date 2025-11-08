@@ -36,10 +36,15 @@ const Contact = () => {
           <FaGithub className="contact-icon" />
           <span>GitHub</span>
         </a>
-        <a href="mailto:pradipdas.dev99@gmail.com">
+        {/* <a href="mailto:pradipdas.dev99@gmail.com">
+          <FaEnvelope className="contact-icon" />
+          <span>Email</span>
+        </a> */}
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pradipdas.dev99@gmail.com" target="_blank" rel="noopener noreferrer">
           <FaEnvelope className="contact-icon" />
           <span>Email</span>
         </a>
+
         <a href="tel:+919382507639">
           <FaPhone className="contact-icon" />
           <span>Phone</span>
