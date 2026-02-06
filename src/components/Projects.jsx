@@ -88,6 +88,7 @@ import Lottie from "lottie-react";
 import "./Projects.css";
 
 import blogwebapp from "../assets/blogwebapp.json";
+import crm from "../assets/crm.json";
 import flight from "../assets/flight.json";
 import music from "../assets/music.json";
 import to_do_list from "../assets/to_do_list.json";
@@ -99,6 +100,13 @@ const projects = [
     live: "https://mern-blog-box7.onrender.com",
     github: "https://github.com/das-pradip/mern_blog",
     animation: blogwebapp,
+  },
+  {
+    title: "CRM App",
+    description: "A role-based CRM system.",
+    live: 'https://leadflow-crm-lcif.onrender.com',
+    github: "https://github.com/das-pradip/crm_project_using_django",
+    animation: crm,
   },
   {
     title: "Airplane Booking App",

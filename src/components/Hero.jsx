@@ -94,7 +94,7 @@ function Hero() {
         <a href="#projects" className="hero-button">
           See My Work
         </a>
-        <a href="/PradipdasCV_FullStack.pdf" className="hero-button" download>
+        <a href="/PradipdasUp.pdf" className="hero-button" download>
           See My Resume
         </a>
       </div>

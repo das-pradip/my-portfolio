@@ -5,16 +5,18 @@ import { motion } from "framer-motion";
 import "./skills.css";
 
 const skillsData = [
+  { name: "Python", level: 80 },
+  { name: "Java", level: 60 },
+  { name: "C", level: 65 },
   { name: "HTML5", level: 90 },
   { name: "CSS3", level: 90 },
   { name: "JavaScript", level: 70 },
   { name: "ReactJS", level: 60 },
+  { name: "Django", level: 60 },
   { name: "NodeJS", level: 70 },
   { name: "ExpressJS", level: 70 },
   { name: "MongoDB", level: 70 },
   { name: "MySQL", level: 70 },
-  { name: "Java", level: 60 },
-  { name: "C", level: 65 },
   { name: "Communication Skill", level: 90 },
   { name: "Problem Solving", level: 60 },
 ];
